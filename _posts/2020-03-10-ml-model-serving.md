@@ -87,7 +87,6 @@ Photo by <a href="https://unsplash.com/@fabmag?utm_source=unsplash&utm_medium=re
 - 1) 쉽고 빠른 인터페이스의 구축 및 사용
 - 2) 향후 검수 시스템의 변경 또는 차량 손상 판정 모델의 변경 시 상호간의 영향 최소화
 - 3) 이미지 처리량의 변화에 따른 유연한 Scaling 지원
-
 <br />
 
 #### 1) 쉽고 빠른 인터페이스의 구축 및 사용
@@ -96,7 +95,6 @@ Photo by <a href="https://unsplash.com/@fabmag?utm_source=unsplash&utm_medium=re
 
 ![](/img/posts_dl_serving/picture02.png){: width="100%" height="100%"}
 <center>그림 2. AWS 콘솔에서의 SQS 생성 페이지</center>
-
 <br />
 
 - Queue에 메시지를 전송하고, 메시지를 받아오기 위해서는 Python의 boto 라이브러리를 사용하면 됩니다. 메시지 Send, Receive, Delete는 아래 코드에서처럼 boto 라이브러리 함수를 호출하여 구현할 수 있습니다 (실 서비스 적용 시에는 개발 환경에 따른 예외 처리 방안들을 포함하여 구현해야 합니다).
