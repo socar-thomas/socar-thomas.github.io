@@ -93,8 +93,7 @@ Photo by <a href="https://unsplash.com/@fabmag?utm_source=unsplash&utm_medium=re
 - 아래 이미지는 AWS SQS를 생성할 때 입력하게 되는 페이지인데, 대기열 이름을 작성하고 맨 아래쪽 대기열 생성 버튼만 누르면 Queue가 생성됩니다. 구성하려는 서비스에 따라 대기열 유형을 결정하고, 대기열 속성의 값들을 적당히 조정하면 됩니다.
 
 ![](/img/posts_dl_serving/picture02.png){: width="100%" height="100%"}
-<center>그림 2. AWS 콘솔에서의 SQS 생성 페이지</center>
-<br />
+<center>그림 2. AWS 콘솔에서의 SQS 생성 페이지</center><br />
 
 - Queue에 메시지를 전송하고, 메시지를 받아오기 위해서는 Python의 boto 라이브러리를 사용하면 됩니다. 메시지 Send, Receive, Delete는 아래 코드에서처럼 boto 라이브러리 함수를 호출하여 구현할 수 있습니다 (실 서비스 적용 시에는 개발 환경에 따른 예외 처리 방안들을 포함하여 구현해야 합니다).
 
